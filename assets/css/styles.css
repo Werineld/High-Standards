@@ -36,6 +36,7 @@ h2 {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
 /******************* Page *********************/
@@ -228,21 +229,16 @@ h2 {
     height: 100vh;
     min-height: 750px;
     position: relative;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.intro::before {
-    content: "";
-    background: url("../images/Logo_Dubai_3.png") no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 1;
+.intro img{
+    width: auto;
+    height: 45vw;
 }
+
 
 /***************** Services *****************/
 
@@ -336,7 +332,7 @@ h2 {
 }
 
 .vip__services__text {
-    width: 50%;
+    width: 80%;
     margin: auto;
     margin-top: 50px;
     display: flex;
@@ -567,6 +563,11 @@ h2 {
 
 
 
+
+
+
+
+
 /***************** MEDIA *******************/
 
 
@@ -577,80 +578,36 @@ h2 {
 
 @media (max-width: 1230px) {
 
+    /* Service */
 
-    .container__main {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
 
-    .wrapper__1 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
 
-    .consult__list {
-        padding-top: 10px;
-        width: 100%;
+    .services__cont {
         display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
-    .consult__img{
-        margin-right: 0;
+    .services__list {
+        display: block;
     }
 
-    /* We do */
-.wedo {
-    display: flex;
-    flex-direction: column;
-    margin: 0 -15px;
-    margin-top: 50px;
-    font-family: 'Montserrat', sans-serif;
-}
+    /* VIP Service */
 
-.wedo__item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0 15px;
-}
-
-.wedo__img {
-    display: block;
-    margin-bottom: 50px;
-    width: 507px;
-    height: 345px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    border-radius: 7px;
-}
-
-    /* Reviews */
-    .reviews__text {
-        font-size: 20px;
-    }
-
-    .contacts__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .vip__services__list {
+        display: flex;
+        flex-flow: column wrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
 
 }
+
 
 
 @media (max-width: 1020px) {
-
-    .net__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     /* Nav */
 
@@ -662,7 +619,7 @@ h2 {
         top: 0%;
         left: 0;
 
-        background-color: #28CFE6;
+        background-color:#1f1f1f;
         opacity: 93%;
     }
 
@@ -681,269 +638,97 @@ h2 {
 
     }
 
-
-    .header#header {
-        background-color: transparent;
-    }
-
     .header.fixed {
+        background-color: transparent;
         box-shadow: none;
     }
 
-    .intro {
-        justify-content: center;
+    .intro img{
+        width: auto;
+        height: 70vw;
     }
 
-    .intro::before {
-        opacity: 0.7;
-    }
-
-
-    .text__rod {
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-
-    .about__links {
-    margin-top: 50px;
-    display: flex;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-    }
-
-    .grafik {
-    margin-top: 40px;
-    }
-
-    .grafik__wrapper__1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .grafik__wrapper {
-        margin-top: 30px;
-        display: flex;
-        font-size: 16px;
-        flex-direction: row;
-    }
-
-    .grafik__item {
-        margin: 15px;
-        padding: 15px;
-
-        border: 2px solid #2020204f;
-        border-radius: 20px;
-        box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    }
-
-    .grafik__title {
-        text-align: center;
-    }
-
-    .grafik__specialist {
-        font-weight: 600;
-        color: #5b5b5be3;
-    }
-
-    .grafik__time {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-
-    /* Reviews */
-    .reviews .slick-slider {
-        padding: 0 60px;
-    }
-
-    .reviews__photo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .reviews__item {
-        padding-left: 175px;
-    }
 
 }
 
 @media (max-width: 770px) {
 
-
-
-    .intro__message {
-        width: 80%;
-    }
-
-    .about__image__cont {
-        margin: 10px;
-    }
-
-    /* Reviews */
-    .reviews__photo {
-        position: static;
-        margin: 0 auto 20px;
-    }
-
-    .reviews__item {
-        padding-left: 0;
-    }
-
-    .reviews__text {
-        font-size: 16px;
-    }
-
-    .reviews__author {
-        font-size: 20px;
-    }
-
-    .rev_bottom_info {
-        position: static;
-        margin-bottom: 30px;
-    }
-
-    .rev__wrapper {
+    
+    .contact__mainform {
+        margin: auto;
+        width: 75%;
         display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .consult__img {
-    width: 400px;
-    }
-
-    .consult__img img {
-        width: 400px;
-    }
-
-    .slick-arrow {
-    top: 10%;
-    }
-
-    .modal__close {
-        top: 37px;
-    }
-
-}
-
-@media (max-width: 660px) {
-    .grafik__wrapper__1 {
-        display: flex;
+        justify-content: center;
+        align-content: center;
         flex-direction: column;
         align-items: center;
     }
 
-    .grafik__wrapper {
-        margin-top: 30px;
-        display: flex;
-        font-size: 16px;
-        flex-direction: column;
+    .input__list textarea {
+        margin-left: 0;
     }
+
+    .mainform__send {
+        margin-left: 0;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+    .contact__img {
+        width: 100%;
+    }
+
+    /* footer */
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__part {
+        width: 80%;
+    }
+
 }
 
 
 @media (max-width: 575px) {
-
-    .net__img {
-        width: 300px;
+    .vip__services__book {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    .net__img img{
-        width: 300px;
+    .subscribe__form {
+        flex-direction: column;
     }
 
-    .intro__inner {
+    .subscribe__form button {
         width: 100%;
     }
 
-    .logotip{
-        height: 220px;
-        margin: 0;
-    }
-
-    #logotip{
-        height: 220px;
-    }
-
-        /* We do */
-.wedo {
-    display: flex;
-    flex-direction: column;
-    margin: 0 -15px;
-    margin-top: 50px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.wedo__item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0 15px;
-}
-
-.wedo__img {
-    display: block;
-    margin-bottom: 50px;
-    width: 300px;
-    height: 200px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-    border-radius: 7px;
-}
-
-/* Reviews */
-
-    .reviews .slick-slider {
-        padding: 0;
-    }
-
-    .consult__img {
-    width: 300px;
-    }
-
-    .consult__img img {
-        width: 300px;
-    }
-
-    .reviews__author {
-    font-size: 17px;
-    }
-
-    .reviews__author:after {
-        display: none;
-    }
-
-    .reviews__author:before {
-        display: none;
-    }
-
-    .parents__img__cont {
-        width: 300px;
-    }
-
-    .modal__dialog {
-        height: 500px;
-    }
-}
-
-
-@media (max-width: 350px) {
-
-    .logotip {
+    .subscribe__form textarea {
         width: 100%;
-        margin: 0;
     }
 
-    #logotip {
-        width: 100%
+}
+
+
+@media (max-width: 400px) {
+
+    .services__item img {
+        width: 260px;
+        height: 150px;
     }
 
-    .section__title {
-        font-size: 30px;
+    .services__item {
+        width: auto;
+        height: auto;
     }
 
-    .section__suptitle {
-        font-size: 22px;
+    .vip__services__book img {
+        display: none;
     }
+    
 }
