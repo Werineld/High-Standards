@@ -664,8 +664,15 @@ h2 {
         align-items: center;
     }
 
+    .input__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .input__list textarea {
         margin-left: 0;
+        margin-right: 0;
     }
 
     .mainform__send {
@@ -712,6 +719,17 @@ h2 {
         width: 100%;
     }
 
+    .vip__services__book img {
+        display: none;
+    }
+
+    .vip__services__button {
+        height: auto;
+    }
+
+    .contact__links {
+        justify-content: space-between;
+
 }
 
 
@@ -727,8 +745,5 @@ h2 {
         height: auto;
     }
 
-    .vip__services__book img {
-        display: none;
-    }
     
 }
