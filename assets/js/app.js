@@ -94,7 +94,7 @@ $(function() {
 
 
 
-    const btns = document.querySelectorAll('.services__item');
+    const btns = document.querySelectorAll('.modal__link');
 
     const modalOverlay = document.querySelector('.modal-overlay ');
 
@@ -119,7 +119,10 @@ $(function() {
 
     modalOverlay.addEventListener('click', (e) => {
         console.log(e.target);
+
         const close_btn = document.querySelector('.modal_close');
+
+        const enquiry = document.querySelectorAll('.enquiry');
 
         if (e.target == modalOverlay) {
             modalOverlay.classList.remove('modal-overlay--visible');
@@ -128,6 +131,12 @@ $(function() {
                 body.classList.remove('overflow');
             });
         } else if (e.target == close_btn) {
+            modalOverlay.classList.remove('modal-overlay--visible');
+            modals.forEach((el) => {
+                el.classList.remove('modal--visible');
+                body.classList.remove('overflow');
+            });
+        } else if (e.target == enquiry) {
             modalOverlay.classList.remove('modal-overlay--visible');
             modals.forEach((el) => {
                 el.classList.remove('modal--visible');

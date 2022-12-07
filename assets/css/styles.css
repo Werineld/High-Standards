@@ -31,6 +31,10 @@ h2 {
     margin-bottom: 40px;
 }
 
+button {
+    transition: all .15s linear;
+}
+
 .h2__cont {
     display: flex;
     justify-content: center;
@@ -79,6 +83,30 @@ h2 {
     background-color: grey;
 }
 
+/********************* Sidebar | WhatsApp *******************/
+
+.sidebar {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+}
+
+.sidebar img {
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 10px rgba(0, 0, 0, 0.2);
+    transition: .3s;
+    display: block;
+}
+
+.sidebar :hover {
+    transform: scale(1.15);
+}
+
+
+
+
 /********************* Nav *******************/
 .nav {
     display: flex;
@@ -96,6 +124,7 @@ h2 {
     position: relative;
 
     font-size: 20px;
+    letter-spacing: 1px;
     color: #fff;
     text-decoration: none;
 
@@ -469,7 +498,7 @@ h2 {
 /* Gallary */
 
 .gallary {
-    margin: 100px 0;
+    margin-top: 100px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -491,11 +520,10 @@ h2 {
 /* Footer */
 
 .footer {
-    margin-top: 250px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    height: 40vh;
 }
 
 .footer__part {
@@ -503,7 +531,14 @@ h2 {
 }
 
 .footer__part img {
-    width: 100%;
+    width: 60%;
+}
+
+#logo__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo__part img {
@@ -512,11 +547,24 @@ h2 {
 
 .subscribe__form {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 
-.subscribe__form textarea {
+.form__line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subsribe__text {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.form__line textarea {
     font-size: 17px;
     font-family: manrope;
     width: 45%;
@@ -548,7 +596,7 @@ h2 {
 }
 
 #contact__part {
-    padding-top: 70px;
+    padding-top:70px;
     display: flex;
     flex-direction: column;
 }
@@ -557,17 +605,52 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.contact__links p{
+    margin: 0;
+    margin-top: 10px;
 }
 
 .contact__links img {
     width: 70px;
+    border-radius: 50%;
+}
+
+.contact__links a {
+    text-decoration: none;
+}
+
+.contact__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 105px;
+    margin-top: 10px;
+}
+
+
+.contact__link {
+    transition: .2s;
+}
+
+.contact__link:hover {
+    transform: scale(1.1);
 }
 
 .copyright {
+    display: flex;
+    justify-content: center;
     font-size: 24px;
     color: #fff;
     text-align: center;
-    margin: 10px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+
 }
 
 /***************** MEDIA *******************/
@@ -676,6 +759,85 @@ h2 {
 }
 
 
+/***************** Modal Forms *******************/
+
+.enquiry__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.enquiry__form textarea {
+    font-size: 17px;
+    font-family: manrope;
+    width: 100%;
+    padding: 20px;
+    padding-left: 5px;
+    margin: 15px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    resize: none;
+}
+
+.enquiry__form p {
+    font-size: 20px;
+    
+}
+
+.enquiry__send {
+    cursor: pointer;
+    margin-top: 25px;
+    width: 250px;
+    height: 65px;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 3px solid #0a8f9e;
+}
+
+.enquiry__send:hover {
+    background-color: #000;
+}
+
+.enquiry__checkbox {
+    font-size: 17px;
+}
+
+.upload__btn button {
+    border: 2px solid #0a8f9e;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: #1f1f1f;
+}
+
+.upload__btn button:hover {
+    background-color: #000;
+}
+
+.upload__btn p {
+    font-size: 17px;
+}
+
+.enquiry__send__container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -753,7 +915,7 @@ h2 {
         left: 0;
 
         background-color:#1f1f1f;
-        opacity: 93%;
+        opacity: 98%;
     }
 
     .nav.active {
@@ -779,6 +941,17 @@ h2 {
     .intro img{
         width: auto;
         height: 70vw;
+    }
+
+    .contact__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 8px 0;
+        padding-top: 15px;
+        width: 130px;
     }
 
 
@@ -823,33 +996,52 @@ h2 {
 
     .footer {
         height: auto;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+        margin-top: 100px;
     }
 
     .footer__part {
         width: 80%;
     }
 
+    .arrow_1_img::before {
+        top: 3%;
+    }
+
+    #logo__part {
+        margin-top: 50px;
+    }
+
 }
 
 
 @media (max-width: 575px) {
+
+    .sidebar img {
+        width: 50px;
+    }
+
     .vip__services__book {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .subscribe__form {
+    .form__line {
         flex-direction: column;
     }
 
     .subscribe__form button {
         width: 100%;
+        margin-top: 20px;
     }
 
     .subscribe__form textarea {
         width: 100%;
+    }
+
+    .subsribe__text {
+        margin-bottom: 0;
     }
 
     .vip__services__book img {
@@ -863,6 +1055,7 @@ h2 {
     .contact__links {
         justify-content: space-between;
     }
+    
 
     
     .modal {
@@ -879,6 +1072,10 @@ h2 {
         right: 5%;
         z-index: 99999999999;
     
+    }
+
+    .arrow_1_img::before {
+        top: 2%;
     }
 
 }
