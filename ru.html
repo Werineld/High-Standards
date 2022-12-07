@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>High Standards</title>
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+
+
+            <nav class="nav" id="nav">
+
+                <div class="nav__link_list">
+                <a class="nav__link" href="#" data-scroll="#services">Услуги</a>
+                <a class="nav__link" href="#" data-scroll="#vip__services">VIP Услуги</a>
+                <a class="nav__link " href="#"   data-scroll="#contacts">Контакты</a>
+                </div>
+                
+
+                
+
+                <div class="nav__lang__list">
+                    <a class="nav__link" id="first" href="index.html">EN</a>
+                    <a class="nav__link" href="">RU</a>
+                </div>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<page>
+
+<!-- Sidebar | WhatsApp -->
+
+
+    <a href="http://wa.me/971558861666"><div class="sidebar">
+        <img src="assets/images/whatsapp.png" alt="">
+    </div></a>
+
+
+<!-- Intro -->
+
+    <div class="intro" id="intro">
+        <img src="assets/images/Logo_Dubai_nofon.png" alt="">
+    </div>
+
+<!-- Services -->
+    <section class="services">
+        <div class="arrow"><img src="assets/images/arrow_gif.gif" alt="arrow.gif"></div>
+        <div class="h2__cont"><h2 id="services">Наши Услуги</h2></div>
+
+        <div class="services__cont">
+            <div class="services__list">
+
+                <div class="services__item modal__link" data-path="one">
+                    <img src="assets/images/Services/1.png" alt="">
+                </div>
+
+                <div class="services__item modal__link" data-path="two">
+                    <img src="assets/images/Services/2.jpg" alt="">
+                </div>
+
+                <div class="services__item modal__link" data-path="three">
+                    <img src="assets/images/Services/3.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="services__list">
+
+                <div class="services__item modal__link" data-path="four">
+                    <img src="assets/images/Services/4.png" alt="">
+                </div>
+
+                <div class="services__item modal__link" data-path="five">
+                    <img src="assets/images/Services/5.png" alt="">
+                </div>
+
+                <a  href="#" data-scroll="#contact__part"><div class="services__item" data-scroll="contact__part">
+                    <img src="assets/images/Services/6.png" alt="">
+                </div></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!------------------ MODALS ------------------>
+
+
+
+
+
+    <div class="modals">
+        <div class="modal-overlay">
+            <div class="modal_close">x</div>
+            <div class="modal modal--1" data-target="one">
+                <div class="modal_intro">
+                    <img src="assets/images/Services/1.png" alt="">
+                </div>
+    
+                <div class="modal_content">
+                    <div class="modal_title">
+                        Консалтинг в области цифрового маркетинга
+                    </div>
+    
+                    <div class="modal_text">
+                        <p>Мы создаем четкие персонализированные Стратегии цифрового маркетинга, с пошаговым Планом действий. <br>
+                        Предвидим и учитываем все возможности и трудности, которые могут повлиять на развитие Вашего бизнеса в цифровом пространстве. <br>
+                        Что публиковать? Где? И Для чего? Как создавать кампании чтобы достичь нужной цели? <br>
+                        Как мониторить и оптимизировать эффективность, заметность Вашего бизнеса в Цифровом пространстве? <br>
+                        </p>
+    
+                        <p>Мы учтем все: <br>
+                        <li>Видимость и Узнаваемость</li>
+                        <li>Взаимодействие с Клиентами</li>
+                        <li>Вебсайт с посещаемостью и конверсией</li>
+                        <li>Укрепление лояльности Ваших Клиентов</li>
+    
+                        </p>
+                    </div>
+    
+                    <div class="modal_btn">
+                        <button class="modal__link enquiry" data-path="enquiry_1">Отправить Запрос</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal--1" data-target="enquiry_1">
+                <div class="modal_intro">
+                    <img src="assets/images/enquiry.png" alt="">
+                </div>
+    
+                <div class="modal_content">
+    
+                    <form>
+                        <div class="enquiry__form">
+                            <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                            <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                            <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                            <div class="enquiry__checkbox"><input type="checkbox">Необходима консультация по Консалтингу в области цифрового маркетинга</div>
+                            <button class="enquiry__send">Отправить Запрос</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="modal modal--2" data-target="two">
+                <div class="modal_intro">
+                    <img src="assets/images/Services/2.jpg" alt="">
+                </div>
+
+                <div class="modal_content">
+                    <div class="modal_title">
+                        Брендинг
+                    </div>
+
+                    <div class="modal_text">
+                        <p>Успешный бренд сегодня не может существовать без уникальности и своей истории. <br>
+                        Мы найдем и выделим ваше УТП, расскажем вашу Историю и полностью упакуем Брендбук<br>
+                        Brand Guidelines we create leading straight to your Brand identity.<br>
+                        С нашей помощью вы сможете отстроиться от конкурентов и идентифицироваться как Бренд.<br>
+                        </p>
+
+                        <p>
+                        <li> Брендбук и Стратегия развития «под ключ»</li>
+                        <li>Ребрендинг</li>
+                        <li>Личный Бренд</li>
+                        <li>Создание Имиджа в соц.сетях для Публичных и Медийных личностей, Государственных чиновников, Инфлюэнсеров и Артистов.</li>
+                        </p>
+                    </div>
+
+                    <div class="modal_btn">
+                        <button class="modal__link enquiry" data-path="enquiry_2">Отправить Запрос</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal--2" data-target="enquiry_2">
+                <div class="modal_intro">
+                    <img src="assets/images/enquiry.png" alt="">
+                </div>
+    
+                <div class="modal_content">
+    
+                    <form>
+                        <div class="enquiry__form">
+                            <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                            <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                            <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                            <div class="enquiry__checkbox"><input type="checkbox">Необходима консультация в области Брендинга</div>
+                            <button class="enquiry__send">Отправить Запрос</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="modal modal--3" data-target="three">
+                <div class="modal_intro">
+                    <img src="assets/images/Services/3.png" alt="">
+                </div>
+
+                <div class="modal_content">
+                    <div class="modal_title">
+                        Ведение социальных сетей "под ключ"
+                    </div>
+
+                    <div class="modal_text">
+                        <p>Ведение страниц в социальных сетях «Под ключ»<br>
+                        Фейсбук, Инстаграм, Твиттер или ТикТок – вы выбираете, а мы делаем и продвигаем!
+                        </p>
+
+                        <p>
+                        <li>Полный анализ Вашей страницы или создание новой с нуля</li>
+                        <li>Анализ конкурентов</li>
+                        <li>Разработка стратегии развития и продвижения в любой соц.сети</li>
+                        <li>Ежемесячный контент-план</li>
+                        <li>Ежемесячный план Визуала в соответствии с концепцией Брендбука/Личного бренда</li>
+                        <li>Создание фото- и видео-контента</li>
+                        <li>Сторисмейкинг</li>
+                        <li>Копирайтинг</li>
+                        <li>Ежедневный монирторинг страницы</li>
+                    </div>
+
+                    <div class="modal_btn">
+                        <button class="modal__link enquiry" data-path="enquiry_3">Отправить Запрос</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal--3" data-target="enquiry_3">
+                <div class="modal_intro">
+                    <img src="assets/images/enquiry.png" alt="">
+                </div>
+    
+                <div class="modal_content">
+    
+                    <form>
+                        <div class="enquiry__form">
+                            <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                            <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                            <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                            <div class="enquiry__checkbox"><input type="checkbox">Необходима консультация по Ведению социальных сетей под ключ.</div>
+                            <button class="enquiry__send">Отправить Запрос</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="modal modal--4" data-target="four">
+                <div class="modal_intro">
+                    <img src="assets/images/Services/4.png" alt="">
+                </div>
+
+                <div class="modal_content">
+                    <div class="modal_title">
+                        Организация мероприятий
+                    </div>
+
+                    <div class="modal_text">
+                        <p>Яркие и запоминающиеся мероприятия, потому что мы относимся к планированию серьезно.
+                        </p>
+
+                        <p>
+                        <li>Запуски новых продуктов и Церемонии награждений</li>
+                        <li>Конференции и Корпоративные собрания</li>
+                        <li>Выступления Артистов и представления</li>
+                        <li>Постановка шоу-программ</li>
+                        </p>
+                        <p>От Концепции и Дизайна, до Цифрового формата мероприятий.</p>
+                    </div>
+
+                    <div class="modal_btn">
+                        <button class="modal__link enquiry" data-path="enquiry_4">Отправить Запрос</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal--4" data-target="enquiry_4">
+                <div class="modal_intro">
+                    <img src="assets/images/enquiry.png" alt="">
+                </div>
+    
+                <div class="modal_content">
+    
+                    <form>
+                        <div class="enquiry__form">
+                            <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                            <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                            <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                            <div class="enquiry__checkbox"><input type="checkbox">Необходима консультация по Организации мероприятий</div>
+                            <button class="enquiry__send">Отправить Запрос</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="modal modal--5" data-target="five">
+                <div class="modal_intro">
+                    <img src="assets/images/Services/5.png" alt="">
+                </div>
+
+                <div class="modal_content">
+                    <div class="modal_title">
+                        Инфлюенсер Менеджмент
+                    </div>
+
+                    <div class="modal_suptitle">
+                        Реклама у Блогеров и Инфлюенсеров
+                    </div>
+
+                    <div class="modal_text">
+                        <p>Наш профессиональный Менеджмент будет курировать выполнение всех условий и договоренностей двустороннего сотрудничества, что исключает возможность недопониманий между Заказчиком рекламы и ее Исполнителем.</p>
+                        <li>Реклама Вашего Продукта/Сервиса в Инстаграм, ТикТок и Фейсбук с помощью наших проверенных и эффективных Блогеров и Инфлюэнсеров.</li>
+                        <li>Посещение Ваших мероприятий Публичными личностями, Артистами, Инфлюэнсерами и Блогерами.</li>
+                        <li>Производство рекламного фото- и видеоконтента при участии Блогеров и Инфлюэнсеров, с заключением договоров на авторские права «Под ключ».</li>
+                        <li>Амбассадор Сотрудничество</li>
+                        <p>Мы подберем Лучшего кандидата, который эффективно представит Ваш Бизнес широкой аудитории цифрового пространства, либо в конкретном регионе.</p>
+
+                        <div class="modal_suptitle">НАШИ БЛОГЕРЫ И ИНФЛЮЭНСЕРЫ</div>
+
+                        <p>
+                            У Вас есть Аудитория в соц.сетях но нет запросов на Рекламу? <br>
+                            Вы известный Инфлюэнсер, но хотите больше новых рекламодателей? <br>
+                            Мы проведем БЕСПЛАТНО и КОНФИДЕНЦИАЛЬНО полный анализ Вашей страницы. <br>
+                            Выбирая сотрудничество с нами, Вы получаете полную поддержку Личного Менеджера и команды профессионалов, которые помогут Вам не только зарабатывать, но и развиваться в сфере рекламы и цифрового пространства.
+                        </p>
+
+                    </div>
+                    <div class="modal_btn">
+                        <button class="modal__link enquiry" data-path="enquiry_Ad">Заявка для рекламодателей</button>
+                    </div>
+                    <div class="modal_btn">
+                        <button class="modal__link enquiry" data-path="enquiry_InB">Заявка для Блогеров и Инфлюенсеров</button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="modal modal--4" data-target="enquiry_Ad">
+            <div class="modal_intro">
+                <img src="assets/images/enquiry.png" alt="">
+            </div>
+
+            <div class="modal_content">
+
+                <form>
+                    <div class="enquiry__form">
+                        <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                        <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                        <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                        <p>Для рекламодателей</p>
+                        <textarea name="message" placeholder="Ссылки на Instagram | Website | Техническое задание в контексте Рекламной кампании..." rows="4"></textarea>
+                    </div>
+                </form>
+
+                <div class="upload__btn">
+                    <p>Вы можете загрузить свои файлы здесь:</p>
+                    <button>Загрузить файлы</button>
+                </div>
+
+                <div class="enquiry__send__container"> 
+                    <button class="enquiry__send">Отправить заявку</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal modal--4" data-target="enquiry_InB">
+            <div class="modal_intro">
+                <img src="assets/images/enquiry.png" alt="">
+            </div>
+
+            <div class="modal_content">
+
+                <form>
+                    <div class="enquiry__form">
+                        <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                        <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                        <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                        <p>Для блогеров и Инфлюенсеров</p>
+                        <textarea name="message" placeholder="Ссылки на Instagram | Website | Страна проживания..." rows="4"></textarea>
+                    </div>
+                </form>
+
+                <div class="upload__btn">
+                    <p>Вы можете загрузить свои файлы здесь:</p>
+                    <button>Загрузить файлы</button>
+                </div>
+                
+                <div class="enquiry__send__container"> 
+                    <button class="enquiry__send">Отправить заявку</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal modal--4" data-target="book__vip">
+            <div class="modal_intro">
+                <img src="assets/images/enquiry.png" alt="">
+            </div>
+
+            <div class="modal_content">
+
+                <form>
+                    <div class="enquiry__form">
+                        <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                        <textarea  name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                        <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                        <textarea name="message" placeholder="Как мы можем Вам помочь | Желаемые даты.." rows="4"></textarea>
+                    </div>
+                </form>
+                
+                <div class="enquiry__send__container"> 
+                    <button class="enquiry__send">Забронировать</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <!-------------- VIP Services --------------------->
+
+
+
+
+
+
+
+
+
+    <section class="vip__services" id="vip__services">
+        <div class="arrow arrow_1_img" >
+            <img src="assets/images/arrow2.jpg" alt="arrow.jpg">
+        </div>
+
+        <div class="h2__cont"><h2>VIP Услуги</h2></div>
+
+        <div class="vip__services__cont">
+            <div class="vip__services__list">
+
+                <div class="vip__services__item">
+                    <img src="assets/images/VIP Services/5.jpg" alt="">
+                    <div class="services__card__text">Booking and<br>Reservation</div>
+                </div>
+
+                <div class="vip__services__item">
+                    <img src="assets/images/VIP Services/6.jpg" alt="">
+                    <div class="services__card__text">Business<br>Development</div>
+                </div>
+
+                <div class="vip__services__item">
+                    <img src="assets/images/VIP Services/7.jpg" alt="">
+                    <div class="services__card__text">Legal Adviser<br>Arrangements</div>
+                </div>
+
+                <div class="vip__services__item">
+                    <img src="assets/images/VIP Services/8.jpg" alt="">
+                    <div class="services__card__text">Personal<br>Shopping<br>Assistance</div>
+                </div>
+
+            </div>
+
+            <div class="vip__services__text">
+                <p>Наш опытный сотрудник станет Вашим Персональным Ассистентом в Дубае на неделю/месяц.
+                Предоставит все возможные опции, в соответствии с выделенными Вами критериями по нужным запросам.
+                А так же подскажет и направит к наилучшему из вариантов, основываясь на многолетнем опыте в ОАЭ. <br> <br>
+                
+
+                Это персонализированный сервис, который сохранит ваше время, деньги и конфиденциальность.
+                    7 дней в неделю онлайн-поддержка, а также личное присутствие по требующим того вопросам.</p>
+                    <p>Личный Ассистент решит всё: <br>
+
+                    <p>От резервации и бронирования,
+                        сбора необходимой информации и контактов по организации, развитию и ведению бизнеса,
+                        организации юридическо-правовой и визовой поддержки,
+                        до персонального шоппинг-сопровождения.</p>
+                
+                <div class="vip__services__book">
+                    <button class="vip__services__button modal__link enquiry" data-path="book__vip"">Забронировать VIP Услуги</button>
+                    <img src="assets/images/arrow_gif.gif" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="h2__cont"><h2>Напишите нам</h2></div>
+
+        <div class="h3__cont"><h3>Наши специалисты свяжутся с вами в ближайшее время</h3></div>
+
+        <div class="contact__mainform">
+
+            <div class="contact__img">
+                <img src="assets/images/Contacts/form_img.png" alt="">
+            </div>
+
+            <div class="contact__form">
+                <form>
+                    <div class="input__list">
+                        <textarea id="textarea__1" name="e-mail" placeholder="E-mail..." rows="1"></textarea>
+                        <textarea name="name" placeholder="Имя..." rows="1" cols="47"></textarea>
+                        <textarea name="phone" placeholder="Телефон..." rows="1"></textarea>
+                        <textarea name="message" placeholder="Сообщение..." rows="4"></textarea>
+                        <button class="mainform__send">Отправить</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="footer__part" id="logo__part">
+                <img src="assets/images/Logo_Dubai_nofon.png" alt="">
+                <div class="copyright">
+                    High Standards. All rights reserved,2018-2022
+                </div>
+            </div>
+
+            <div class="footer__part" id="contact__part">
+                <div class="subscribe__form">
+                    <div class="form__line">
+                    <textarea name="E-mail" placeholder="Your E-mail..." rows="1"></textarea>
+                    <button class="subscribe__button">Подписаться</button>
+                    </div>
+
+                    <div class="subsribe__text">Подписаться на нашу рассылку</div>
+
+                </div>
+                <div class="contact__links">
+                    <a href=""><div class="contact__link nav__link">
+                        <img src="assets/images/instagram.png" alt="">
+                        <p>Instagram</p>
+                    </div></a>
+                    <a href="tel:+971558861666"><div class="contact__link nav__link">
+                        <img src="assets/images/telephone.png" alt="">
+                        <p class="">Telephone</p>
+                    </div></a>
+                    <a href="http://wa.me/971558861666"><div class="contact__link nav__link">
+                        <img src="assets/images/whatsapp.png" alt="">
+                        <p>WhatsApp</p>
+                    </div></a>
+                    <a href="mailto:info@highstandardspr.com"><div class="contact__link nav__link">
+                        <img src="assets/images/email.png" alt="">
+                        <p>Email</p>
+                    </div></a>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="gallary">
+            <div class="gallary__list">
+                <img src="assets/images/Contacts/1.png" alt="">
+                <img src="assets/images/Contacts/2.jpg" alt="">
+                <img src="assets/images/Contacts/3.png" alt="">
+                <img src="assets/images/Contacts/4.jpg" alt="">
+            </div>
+
+            <div class="gallary__list">
+                <img src="assets/images/Contacts/5.jpg" alt="">
+                <img src="assets/images/Contacts/6.png" alt="">
+                <img src="assets/images/Contacts/7.jpg" alt="">
+                <img src="assets/images/Contacts/8.png" alt="">
+            </div>
+        </div>
+
+    </section>
+</page>
+<script src="assets/js/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
