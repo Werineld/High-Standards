@@ -52,20 +52,17 @@ $(function() {
         $("#nav").toggleClass("active");
     });
 
+    $(".nav__link").on("click", function(event) {
+        event.preventDefault();
 
-    /* copyright test */
+        $(this).toggleClass("active");
+        $("#nav").toggleClass("active");
+        $("#nav_toggle").toggleClass("active");
+    });
 
-    let block = document.querySelector('.copyright');
+    
 
-    block.addEventListener('click', ()=> {
-        if(block.classList.contains('notred')) {
-            block.classList.add('red')
-            block.classList.remove('notred')
-        }  else{
-            block.classList.remove('red')
-            block.classList.add('notred')
-        }
-    })
+
 
     /* modals */
 
