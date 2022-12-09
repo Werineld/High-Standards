@@ -208,8 +208,8 @@ button {
 
 /***************** Nav toggle ***************/
 .nav-toggle {
-    width: 40px;
-    padding: 20px 0;
+    width: 30px;
+    padding: 10px 0;
     display: none;
 
     font-size: 0;
@@ -232,7 +232,7 @@ button {
 .nav-toggle__item {
     display: block;
     width: 100%;
-    height: 4px;
+    height: 3px;
 
     background-color: #0a8f9e;
 
@@ -254,7 +254,7 @@ button {
 .nav-toggle__item:after {
     content: "";
     width: 100%;
-    height: 4px;
+    height: 3px;
 
     background-color: #0a8f9e;
 
@@ -266,11 +266,11 @@ button {
 }
 
 .nav-toggle__item:before {
-    top: -11px;
+    top: -8px;
 }
 
 .nav-toggle__item:after {
-    bottom: -11px;
+    bottom: -8px;
 }
 
 .nav-toggle.active .nav-toggle__item:before {
@@ -649,7 +649,6 @@ button {
     justify-content: space-evenly;
     margin-top: 40px;
     font-size: 18px;
-    flex-wrap: wrap;
 }
 
 .contact__links p{
@@ -1085,6 +1084,10 @@ button {
     }
     .contact__img {
         width: 100%;
+    }
+
+    .contact__links {
+        flex-wrap: wrap;
     }
 
     /* footer */
